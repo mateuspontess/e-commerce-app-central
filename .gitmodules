@@ -1,0 +1,15 @@
+[submodule "e-commerce-app-ms-orders"]
+	path = e-commerce-app-ms-orders
+	url = https://github.com/mateuspontess/e-commerce-app-ms-orders.git
+[submodule "e-commerce-app-ms-payments"]
+	path = e-commerce-app-ms-payments
+	url = https://github.com/mateuspontess/e-commerce-app-ms-payments.git
+[submodule "e-commerce-app-ms-products"]
+	path = e-commerce-app-ms-products
+	url = https://github.com/mateuspontess/e-commerce-app-ms-products.git
+[submodule "e-commerce-app-ms-accounts"]
+	path = e-commerce-app-ms-accounts
+	url = https://github.com/mateuspontess/e-commerce-app-ms-accounts.git
+[submodule "e-commerce-app-ms-users"]
+	path = e-commerce-app-ms-users
+	url = https://github.com/mateuspontess/e-commerce-app-ms-users.git
