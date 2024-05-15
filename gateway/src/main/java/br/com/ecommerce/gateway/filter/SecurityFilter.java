@@ -63,9 +63,8 @@ public class SecurityFilter implements GlobalFilter {
 							});
 					
 				} catch (Exception e) {
-					System.out.println("CAIU NO CATCH");
-					System.out.println(e.getLocalizedMessage());
 					e.printStackTrace();
+					throw e;
 				}
 		    }
 			return chain.filter(exchange);
