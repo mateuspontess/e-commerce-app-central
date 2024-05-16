@@ -3,7 +3,7 @@
 E-CommerceApp is a REST API for e-commerce stores, distributed in microservices, which has both operations performed for the customer, as well as operations performed by employees and administrators.
 
 
-## ⚙️ Functionalities
+## 🖥️ Functionalities
 
 
 - ✅ Users CRUD divided between `account-ms` and `users-ms`
@@ -36,3 +36,6 @@ E-CommerceApp is a REST API for e-commerce stores, distributed in microservices,
 - [SpringBoot Starter Web]()
 - [SpringBoot Starter Validation](https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html)
 - [SpringBoot Devtools](https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/html/using-boot-devtools.html)
+
+## ⚙️ Application schema
+![application-schema](readme/application.svg)
