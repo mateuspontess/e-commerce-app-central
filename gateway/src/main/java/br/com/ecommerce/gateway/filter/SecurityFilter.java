@@ -94,6 +94,6 @@ public class SecurityFilter implements GlobalFilter {
      */
 	private void verifyRole(List<String> rolesAllowOnTheRoute, String userRole) {
 		if(!rolesAllowOnTheRoute.contains(userRole.toUpperCase()))
-			throw new ResponseStatusException(HttpStatus.FORBIDDEN, "Unathorized");
+			throw new ResponseStatusException(HttpStatus.FORBIDDEN, "Unauthorized");
 	}
 }
