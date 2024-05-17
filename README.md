@@ -48,6 +48,6 @@ E-CommerceApp is a REST API for e-commerce stores, distributed in microservices,
 
 - **Para logar como um ADMIN utilize username `root` e password `root@123` ou crie as variáveis de ambiente `ADMIN_USERNAME` e `ADMIN_PASSWORD`.**
 
-# Credits
+# 🤝 Credits
 
 - Special thanks to [@AlexandreMadeira](https://github.com/MadeiraAlexandre) for helping me with several suggestions, such as creating the concept of system services, and with the relationships of some entities.
