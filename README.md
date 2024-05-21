@@ -41,7 +41,7 @@ E-CommerceApp is a REST API for e-commerce stores, distributed in microservices,
 ![application-schema](readme/application.svg)
 
 
-## 📦Endpoints 
+## 📦 Endpoints 
 
 
 [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/31232249-f8298dc1-e513-4900-9548-385b6d19c3e7?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D31232249-f8298dc1-e513-4900-9548-385b6d19c3e7%26entityType%3Dcollection%26workspaceId%3Daae15406-ac2a-4087-8c9e-47072e8aa119)
