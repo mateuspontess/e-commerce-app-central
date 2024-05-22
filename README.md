@@ -1,3 +1,5 @@
+# E-Commerce App
+
 ## 🔎 About the project
 
 E-CommerceApp is a REST API for e-commerce stores, distributed in microservices, which has both operations performed for the customer, as well as operations performed by employees and administrators.
