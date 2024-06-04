@@ -40,9 +40,8 @@ public class SecurityFilter implements GlobalFilter {
 			
 			if (authorizedRoles != null) {
 				String token = request.getHeaders().getFirst("Authorization");
-				if(token == null | token.isBlank())
+				if (token == null || token.isBlank())
 					throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Missing authorization header");
-				
 				
 				try {
 					return exchange.getApplicationContext().getBean(WebClient.Builder.class)
