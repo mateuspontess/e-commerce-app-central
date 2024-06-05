@@ -13,7 +13,7 @@ public class PaymentsSecureRoutesMapper implements SecureRoutesMapper {
 		Map<RequestInfo, List<String>> map = new HashMap<>();
 
 		map.put(new RequestInfo("/payments", HttpMethod.GET), Arrays.asList("ADMIN"));
-		map.put(new RequestInfo("/payments/1", HttpMethod.PUT), Arrays.asList("ADMIN"));
+		map.put(new RequestInfo("/payments/1", HttpMethod.PATCH), Arrays.asList("ADMIN"));
 		
 		return map;
 	}
