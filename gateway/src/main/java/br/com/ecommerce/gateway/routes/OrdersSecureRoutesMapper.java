@@ -15,7 +15,7 @@ public class OrdersSecureRoutesMapper implements SecureRoutesMapper {
 		map.put(new RequestInfo("/orders", HttpMethod.POST), Arrays.asList("CLIENT", "ADMIN"));
 		map.put(new RequestInfo("/orders", HttpMethod.GET), Arrays.asList("CLIENT", "ADMIN"));
 		map.put(new RequestInfo("/orders/1", HttpMethod.GET), Arrays.asList("CLIENT", "ADMIN"));
-		map.put(new RequestInfo("/orders/1", HttpMethod.PUT), Arrays.asList("CLIENT", "ADMIN"));
+		map.put(new RequestInfo("/orders/1", HttpMethod.PATCH), Arrays.asList("CLIENT", "ADMIN"));
 		
 		return map;
 	}
