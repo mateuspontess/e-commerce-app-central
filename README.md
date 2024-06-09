@@ -2,7 +2,7 @@
 
 ## 🔎 About the project
 
-E-CommerceApp is a REST API for e-commerce stores, distributed in microservices, which has both operations performed for the customer, as well as operations performed by employees and administrators.
+E-CommerceApp is a REST API for an e-commerce store aimed at the PC-Gaming market, based on microservices architecture, it has both operations carried out for the customer and operations carried out by employees and administrators.
 
 
 ## 🖥️ Functionalities
@@ -16,7 +16,7 @@ E-CommerceApp is a REST API for e-commerce stores, distributed in microservices,
 
 - ✅ Products CRUD
 
-- ✅ Parametrized search for products
+- ✅ Highly parameterized search for products
 
 - ✅ Payment persistence based on messaging
 
@@ -28,9 +28,8 @@ E-CommerceApp is a REST API for e-commerce stores, distributed in microservices,
 - [RabbitMQ](https://www.rabbitmq.com/)
 - [Modelmapper](https://modelmapper.org/)
 - [Lombok](https://projectlombok.org/)
-- [Java JWT (Auth0)](https://github.com/auth0/java-jwt)
-- [Libphonenumber](https://github.com/google/libphonenumber)
-- [MySQL Connector/J](https://dev.mysql.com/downloads/connector/j/)
+- [JWT](https://github.com/auth0/java-jwt)
+- [MySQL](https://dev.mysql.com/downloads/connector/j/)
 - [Spring Cloud Netflix](https://cloud.spring.io/spring-cloud-netflix/reference/html/)
 - [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
 - [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
