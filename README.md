@@ -24,6 +24,7 @@ E-CommerceApp is a REST API for e-commerce stores, distributed in microservices,
 
 ## 🛠️ Tecnologies
 
+- [TestContainers](https://testcontainers.com/)
 - [RabbitMQ](https://www.rabbitmq.com/)
 - [Modelmapper](https://modelmapper.org/)
 - [Lombok](https://projectlombok.org/)
@@ -37,7 +38,6 @@ E-CommerceApp is a REST API for e-commerce stores, distributed in microservices,
 - [SpringBoot Starter JPA](https://spring.io/projects/spring-data-jpa)
 - [SpringBoot Starter Web]()
 - [SpringBoot Starter Validation](https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html)
-- [SpringBoot Devtools](https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/html/using-boot-devtools.html)
 
 ## ⚙️ System overview
 ![application-schema](readme/application.svg)
