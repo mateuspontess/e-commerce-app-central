@@ -16,7 +16,7 @@ E-CommerceApp is a REST API for an e-commerce store aimed at the PC-Gaming marke
 
 - ✅ Products CRUD
 
-- ✅ Parametrized search for products
+- ✅ Highly parameterized search for products
 
 - ✅ Payment persistence based on messaging
 
