@@ -7,7 +7,7 @@ import java.util.Map;
 
 import org.springframework.http.HttpMethod;
 
-public class ProductsSecureRoutesMapper implements SecureRoutesMapper {
+public class ProductsSecureRoutesImpl implements ISecureRoutes {
 
 	public Map<RequestInfo, List<String>> getRoutes() {
 		Map<RequestInfo, List<String>> map = new HashMap<>();

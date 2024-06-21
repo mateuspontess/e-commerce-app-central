@@ -9,10 +9,10 @@ public class SecureRoutesMap {
     private static final Map<String, Map<RequestInfo, List<String>>> servicesMap = new HashMap<>();
 
     static {
-    	servicesMap.put("account", new AccountSecureRoutesMapper().getRoutes());
-    	servicesMap.put("orders", new OrdersSecureRoutesMapper().getRoutes());
-    	servicesMap.put("payments", new PaymentsSecureRoutesMapper().getRoutes());
-    	servicesMap.put("products", new ProductsSecureRoutesMapper().getRoutes());
+    	servicesMap.put("account", new AccountSecureRoutesImpl().getRoutes());
+    	servicesMap.put("orders", new OrdersSecureRoutesImpl().getRoutes());
+    	servicesMap.put("payments", new PaymentsSecureRoutesImpl().getRoutes());
+    	servicesMap.put("products", new ProductsSecureRoutesImpl().getRoutes());
     }
 
     public static List<String> getRolesForRoute(String serviceName, RequestInfo routeKey) {
