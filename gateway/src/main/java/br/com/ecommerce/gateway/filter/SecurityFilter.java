@@ -21,14 +21,14 @@ import reactor.core.publisher.Mono;
 @Component
 public class SecurityFilter implements GlobalFilter {
 
-    /**
-     * Filters the incoming request based on security rules.
-     *
-     * @param exchange The current server web exchange.
-     * @param chain    The filter chain to proceed with after security checks.
-     * 
-     * @return A Mono representing the completion of the filter operation.
-     */
+	/**
+	 * Filters the incoming request based on security rules.
+	 *
+	 * @param exchange The current server web exchange.
+	 * @param chain    The filter chain to proceed with after security checks.
+	 * 
+	 * @return A Mono representing the completion of the filter operation.
+	 */
 	@Override
 	public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 			ServerHttpRequest request = exchange.getRequest();
@@ -54,9 +54,9 @@ public class SecurityFilter implements GlobalFilter {
 							.doOnNext(user -> this.verifyRole(authorizedRoles, user.role()))
 							.flatMap(user -> {
 								ServerHttpRequest modifiedRequest = exchange.getRequest()
-										.mutate()
-										.headers(httpHeaders -> httpHeaders.add("X-auth-user-id", String.valueOf(user.id())))
-										.build();
+									.mutate()
+									.headers(httpHeaders -> httpHeaders.add("X-auth-user-id", String.valueOf(user.id())))
+									.build();
 								ServerWebExchange modifiedExchange = exchange.mutate().request(modifiedRequest).build();
 								return chain.filter(modifiedExchange);
 							});
@@ -65,16 +65,16 @@ public class SecurityFilter implements GlobalFilter {
 					e.printStackTrace();
 					throw e;
 				}
-		    }
+			}
 			return chain.filter(exchange);
 	}
 
-    /**
-     * Extracts the service name from the given request path.
-     *
-     * @param path The request path.
-     * @return The extracted service name.
-     */
+	/**
+	 * Extracts the service name from the given request path.
+	 *
+	 * @param path The request path.
+	 * @return The extracted service name.
+	 */
 	private String getServiceName(String path) {
 		int secondBarIndex = path.indexOf("/", path.indexOf("/")+1);
 		
@@ -82,15 +82,15 @@ public class SecurityFilter implements GlobalFilter {
 			return path.substring(1);
 		return path.substring(1, secondBarIndex);
 	}
-	
-    /**
-     * Verifies if the user has the required role to access the route.
-     *
-     * @param rolesAllowOnTheRoute The roles allowed on the route.
-     * @param userRole             The role of the user.
-     * 
-     * @throws ResponseStatusException if the user role is not authorized.
-     */
+
+	/**
+	 * Verifies if the user has the required role to access the route.
+	 *
+	 * @param rolesAllowOnTheRoute The roles allowed on the route.
+	 * @param userRole             The role of the user.
+	 * 
+	 * @throws ResponseStatusException if the user role is not authorized.
+	 */
 	private void verifyRole(List<String> rolesAllowOnTheRoute, String userRole) {
 		if(!rolesAllowOnTheRoute.contains(userRole.toUpperCase()))
 			throw new ResponseStatusException(HttpStatus.FORBIDDEN, "Unauthorized");

@@ -13,14 +13,14 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(ResponseStatusException.class)
 	public ResponseEntity<ErrorMessage> handlerResponseStatusException(ResponseStatusException ex) {
 		ErrorMessage errorMessage = new ErrorMessage(ex.getStatusCode().value(), ex.getReason());
-        return ResponseEntity.status(ex.getStatusCode()).body(errorMessage);
+		return ResponseEntity.status(ex.getStatusCode()).body(errorMessage);
 	}
 
 	@ExceptionHandler(WebClientResponseException.Unauthorized.class)
 	public ResponseEntity<ErrorMessage> handlerResponseStatusException(WebClientResponseException ex) {
-        return ResponseEntity.status(ex.getStatusCode()).body(new ErrorMessage(HttpStatus.UNAUTHORIZED.value(), "Unauthorized"));
+		return ResponseEntity.status(ex.getStatusCode()).body(new ErrorMessage(HttpStatus.UNAUTHORIZED.value(), "Unauthorized"));
 	}
-	
+
 	@ExceptionHandler(RuntimeException.class)
 	public ResponseEntity<ErrorMessage> handlerRuntimeException(RuntimeException ex) {
 		ex.printStackTrace();
@@ -28,6 +28,6 @@ public class GlobalExceptionHandler {
 				HttpStatus.INTERNAL_SERVER_ERROR.value(), ex.getMessage());
 		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(errorMessage);
 	}
-	
+
 	private record ErrorMessage(int status, String message) {}
 }
