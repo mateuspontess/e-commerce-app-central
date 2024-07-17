@@ -1,9 +1,34 @@
-# E-Commerce App
+# Microsservices PC Store
 
 ## 🔎 About the project
 
 E-CommerceApp is a REST API for an e-commerce store aimed at the PC-Gaming market, based on microservices architecture, it has both operations carried out for the customer and operations carried out by employees and administrators.
 
+## 🔧 Adjustments and improvements
+
+The project is still under development and the next updates will focus on the following tasks:
+
+- [ ] Create evaluation service
+- [ ] Implement a better separation of Users and Clients
+- [ ] Add more details to poor entities
+- [ ] Add more behaviors to entities, reducing dependence on external services for basic domain rules
+- [ ] Improvements in authentication, such as sending tokens by Email and authentication via third parties
+- [ ] Sending emails regarding orders
+- [ ] Implement persistence with MongoDB for services that make sense to use it
+- [ ] Create fallbacks for failures between services
+- [ ] Create and handle dead letter exchanges
+- [ ] Configure messaging rules
+- [ ] Configure load balancing rules
+- [ ] Create docker-compose to generate messaging service instances and databases
+- [ ] Create detailed documentation with Postman (currently there are only requests in the Postman collection)
+
+## 📋 Prerequisites
+
+Before you begin, make sure you've met the following requirements:
+
+- Java 17
+- Server RabbitMQ 3.7
+- Database MySQL 8.0
 
 ## 🖥️ Functionalities
 
