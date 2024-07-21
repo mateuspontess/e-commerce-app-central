@@ -8,6 +8,8 @@ E-CommerceApp is a REST API for an e-commerce store aimed at the PC-Gaming marke
 
 The project is still under development and the next updates will focus on the following tasks:
 
+- [ ] Add standard price and promotional price
+- [ ] Add discount coupon system
 - [ ] Create evaluation service
 - [ ] Implement a better separation of Users and Clients
 - [ ] Add more details to poor entities
