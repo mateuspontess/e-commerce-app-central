@@ -34,7 +34,6 @@ Before you begin, make sure you've met the following requirements:
 
 ## 🖥️ Functionalities
 
-
 - ✅ Users CRUD divided between `account-ms` and `users-ms`
 
 - ✅ Authentication and authorization also divided between `account-ms` and `users-ms`
@@ -68,9 +67,7 @@ Before you begin, make sure you've met the following requirements:
 ## ⚙️ System overview
 ![application-schema](readme/application.svg)
 
-
 ## 📦 Endpoints 
-
 
 [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/31232249-f8298dc1-e513-4900-9548-385b6d19c3e7?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D31232249-f8298dc1-e513-4900-9548-385b6d19c3e7%26entityType%3Dcollection%26workspaceId%3Daae15406-ac2a-4087-8c9e-47072e8aa119)
 
