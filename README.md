@@ -16,7 +16,7 @@ The project is still under development and the next updates will focus on the fo
 - [ ] Add more behaviors to entities, reducing dependence on external services for basic domain rules
 - [ ] Improvements in authentication, such as sending tokens by Email and authentication via third parties
 - [ ] Sending emails regarding orders
-- [ ] Implement persistence with MongoDB for services that make sense to use it
+- [ ] Implementar persistência com mongodb no microsserviço de produtos
 - [ ] Create fallbacks for failures between services
 - [ ] Create and handle dead letter exchanges
 - [ ] Configure messaging rules
